@@ -1,0 +1,39 @@
+.expansion {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-icon {
+  align-items: center;
+  display: flex;
+  height: 14px;
+  justify-content: center;
+  margin-left: 8px;
+  width: 14px;
+}
+
+.expansion-header {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.expansion-header p {
+  padding-bottom: 0;
+}
+
+.expansion-content > :first-child {
+  margin-top: 0;
+}
+
+.fade-in {
+  max-height: 1000px;
+  transition: max-height 0.35s ease-in;
+}
+
+.fade-out {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out;
+}
